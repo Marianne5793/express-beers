@@ -33,6 +33,9 @@ app.get('/beer/:beerId', async function (req, res) {
     console.log(err.stack);
   }
   client.close();
+
+
+  
 });
 
 
@@ -43,9 +46,7 @@ app.use(express.static('./step-05/public'));
 var url = process.env.MONGODB_ADDON_URI || 'mongodb://localhost:27017';
 var dbName = 'test'
 
-
-
-var server = process.env.PORT || app.listen(3000, function () {
+var server = app.listen(process.env.PORT || 3000, function () {
   var host = server.address().address;
   var port = server.address().port;
   console.log('Listening at http://%s:%s', host, port);

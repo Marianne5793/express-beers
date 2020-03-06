@@ -10,6 +10,9 @@
     "mongodb": "^3.1.10"
   },
   "scripts": {
-    "start": "node ./step-05/index.js"
+    "start": "node ./step-05/index.js",
+    "import":".step-05/beers/beers.json"
   }
+
 }
+
