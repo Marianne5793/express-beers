@@ -44,7 +44,7 @@ app.use('/img', express.static('img'));
 app.use(express.static('./step-05/public'));
 
 var url = process.env.MONGODB_ADDON_URI || 'mongodb://localhost:27017';
-var dbName = 'test'
+var dbName = process.env.MONGODB_ADDON_DB || "test";
 
 var server = app.listen(process.env.PORT || 3000, function () {
   var host = server.address().address;
