@@ -12,6 +12,7 @@
   "scripts": {
     "start": "node ./step-05/index.js",
     "import":".step-05/beers/beers.json"
+    
   }
 
 }
