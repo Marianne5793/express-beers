@@ -38,7 +38,7 @@ app.get('/beer/:beerId', async function (req, res) {
 
 app.use('/beers/img', express.static('img'));
 app.use('/img', express.static('img'));
-app.use(express.static('public'));
+app.use(express.static('./step-05/public'));
 
 var url = 'mongodb://localhost:27017';
 var dbName = 'test'
