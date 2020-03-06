@@ -33,6 +33,9 @@ app.get('/beer/:beerId', async function (req, res) {
     console.log(err.stack);
   }
   client.close();
+
+
+  
 });
 
 
